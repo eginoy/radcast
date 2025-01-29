@@ -555,7 +555,7 @@ func (r *Radiko) GetStreamURL(stationID string) (string, error) {
 	}
 
 	var streamURL string = ""
-	streamUrlRegex := regexp.MustCompile(`playlist\.m3u8`)
+	streamUrlRegex := regexp.MustCompile(`playlist\.m3u8$`)
 	for _, i := range urlData.URL {
 		if streamUrlRegex.MatchString(i.PlaylistCreateURL) {
 			streamURL = i.PlaylistCreateURL
