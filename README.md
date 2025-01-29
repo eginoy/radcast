@@ -1,4 +1,15 @@
 # radcast
+
+[本家](https://github.com/omiso46/radcast)がメンテナンスを停止したためフォークした。  
+https://github.com/eginoy/radcast-docker で利用している。  
+2025/01/20以降のradiko API仕様変更に対応。
+
+# build
+`go mod tidy`  
+`go build -o radcast`
+
+--- 以下オリジナル ---
+
 ■ 公開停止<br>
 2025/01/20以降radikoの録音ができません<br>
 メンテの気力が湧かないので公開停止をすることにしました<br>
